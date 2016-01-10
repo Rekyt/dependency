@@ -1,19 +1,3 @@
-# Load a file in memory
-load_file = function(file_name) {
-  return(readLines(file_name))
-}
-
-# Returns the packages loaded in the file
-loaded_pkg = function(stored_file) {
-  
-  loaded_pkg = stringr::str_extract(stored_file, ".*(?!#).*(library|require)\\(.*\\)") %>%
-    na.omit() %>%
-    as.vector() %>%
-    stringr::str_replace_all('(library|require)\\(|\\)|"|\"', "")
-  
-  return(unique(loaded_pkg))
-}
-
 #' List all R files in directory
 #'
 #' @param path A character string indicating a path or a list of paths
@@ -43,9 +27,3 @@ list_R_files = function(path = ".") {
   
   return(files_list)
 }
-
-# pkgs = lapply(files_list, function(single_file) {
-#   file_in_mem = load_file(single_file)
-#   
-#   found_pkg
-# })
