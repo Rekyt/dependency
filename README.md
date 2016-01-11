@@ -1,5 +1,7 @@
 # `dependency`
 
+[![Travis-CI Build Status](https://travis-ci.org/Rekyt/dependency.svg?branch=master)](https://travis-ci.org/Rekyt/dependency) [![codecov.io](https://codecov.io/github/Rekyt/dependency/coverage.svg?branch=master)](https://codecov.io/github/Rekyt/dependency?branch=master)
+
 A package to make dependency graphs of bunchs of scripts. Imagine you have a series of scripts depending on each other, producing several outputs, dependency lets you follow the dependencies.
 
 
