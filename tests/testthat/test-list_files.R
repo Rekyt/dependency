@@ -25,10 +25,11 @@ test_that("Default directory is present directory", {
 
 test_that("Specifying directory returns good list of files", {
   present_file = c("test-list_files.R", "test-used_pkgs.R")
+  print(getwd())
   
   expect_equal(list_R_files("."), present_file)
   
-  getwd()
+  print(getwd())
   
   expect_equal(list_R_files("../R/"), c("list_R_files.R", "used_pkgs.R"))
 })
