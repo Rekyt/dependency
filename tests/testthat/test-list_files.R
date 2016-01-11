@@ -28,5 +28,7 @@ test_that("Specifying directory returns good list of files", {
   
   expect_equal(list_R_files("."), present_file)
   
-  expect_equal(list_R_files("../../R/"), c("list_R_files.R", "used_pkgs.R"))
+  getwd()
+  
+  expect_equal(list_R_files("../R/"), c("list_R_files.R", "used_pkgs.R"))
 })
