@@ -18,4 +18,4 @@ For the moment the only exported function is `list_R_files()` that looks into a 
 
 ## /!\ Note
 
-`dependency` is conceived a very simple and usable package on tighly written scripts. With well defined packages loadings and scripts sourcing. It does not evaluate the network of dependencies by **evaluating** the scripts rather by **scraping** them.
+`dependency` is conceived as a very simple and usable package on tightly written scripts; with explicit package loading and scripts sourcing. It does not evaluate the network of dependencies by **evaluating** the scripts but rather by **scraping** them.
