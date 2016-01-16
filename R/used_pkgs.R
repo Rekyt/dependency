@@ -27,6 +27,13 @@ get_loaded_pkg = function(stored_file) {
 }
 
 # Returns packages not loaded but used with '::' and ':::' in file
+#' Get Loaded Packages
+#'
+#' @param stored_file file stored as a vector of character.
+#' 
+#' @importFrom stringr str_extract str_replace
+#' @importFrom dplyr %>%
+#' @export
 get_used_pkg = function(stored_file) {
   
   used = str_extract(stored_file, ".*(?!#).*:{2,3}") %>%
