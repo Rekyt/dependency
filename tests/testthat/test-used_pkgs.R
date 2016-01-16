@@ -23,3 +23,10 @@ test_that("When correct file name provided, output is correct", {
   
   expect_equal(testthat_file[1], "library(testthat)")
 })
+
+
+test_that("Detect loaded packages in given file", {
+  testthat_file = load_file("../testthat.R")
+  
+  expect_equal(get_loaded_pkg(testthat_file), c("testthat", "dependency"))
+})
