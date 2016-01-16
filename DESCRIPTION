@@ -1,5 +1,5 @@
 Package: dependency
-Title: What the Package Does (one line, title case)
+Title: Make Dependency Graph from R Scripts
 Version: 0.0.0.9000
 Authors@R: person("Matthias", "Greni\u00e9",
   email = "matthias.grenie@ens-lyon.fr", role = c("aut", "cre"))
